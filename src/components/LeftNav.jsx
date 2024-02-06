@@ -40,9 +40,6 @@ const LeftNav = () => {
             />
           </div>
           <div className="menu-wrapper pt-10">
-            <h3 className="text-lg font-medium text-[#202A36] pl-8 opacity-40 pb-4">
-              Menu
-            </h3>
             <div className="menu-items px-1">
               {menus.map((menu, index) => (
                 <NavLink
@@ -50,8 +47,8 @@ const LeftNav = () => {
                   key={index}
                   className={({ isActive }) =>
                     isActive
-                      ? 'active h-[60px] flex items-center border-l-2 border-solid border-[#1B97A4] bg-[#F8F9FB] font-semibold text-[#1C899B]'
-                      : 'h-[60px] flex items-center border-l-2 border-solid border-transparent text-[#202A36]'
+                      ? 'active h-[60px] flex items-center border-l-4 border-solid border-[#1B97A4] bg-[#F8F9FB] font-semibold text-[#1C899B]'
+                      : 'h-[60px] flex items-center border-l-4 border-solid border-transparent text-[#202A36]'
                   }
                 >
                   <p className="m-0 flex items-center px-8 gap-6">

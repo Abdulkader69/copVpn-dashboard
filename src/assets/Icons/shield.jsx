@@ -7,6 +7,7 @@ const Shield = () => {
         viewBox="0 0 171 193"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        className="w-16 m-auto h-auto"
       >
         <g filter="url(#filter0_d_739_249)">
           <path

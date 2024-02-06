@@ -3,7 +3,7 @@ import './App.css';
 import LeftNav from './components/LeftNav';
 import { Account } from './pages/account';
 import { Billing } from './pages/billing';
-import { ConnectedDevices } from './pages/connected-devices';
+import { ConnectedDevicesPage } from './pages/connected-devices';
 import { Pricing } from './pages/pricing';
 import { Route, Routes } from 'react-router-dom';
 
@@ -18,7 +18,7 @@ function App() {
             <Route
               exact
               path="/connected-devices"
-              element={<ConnectedDevices />}
+              element={<ConnectedDevicesPage />}
             />
             <Route exact path="/billing" element={<Billing />} />
             <Route exact path="/pricing" element={<Pricing />} />
