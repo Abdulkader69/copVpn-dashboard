@@ -3,6 +3,8 @@ import ProfileIcon from '../assets/Icons/ProfileIcon';
 import DevicesIcon from '../assets/Icons/DevicesIcon';
 import PriceIcon from '../assets/Icons/PriceIcon';
 import BillingIcon from '../assets/Icons/BillingIcon';
+import Head from '../assets/Icons/Head';
+import LogoutIcon from '../assets/Icons/LogoutIcon';
 
 const menus = [
   {
@@ -39,7 +41,7 @@ const LeftNav = () => {
               alt="logo"
             />
           </div>
-          <div className="menu-wrapper pt-10">
+          <div className="menu-wrapper">
             <div className="menu-items px-1">
               {menus.map((menu, index) => (
                 <NavLink
@@ -58,6 +60,20 @@ const LeftNav = () => {
                 </NavLink>
               ))}
             </div>
+          </div>
+        </div>
+        <div className="profile-left p-5 absolute bottom-0 w-full">
+          <div className="line bg-[#202A36] w-full h-0.5 opacity-5 mb-7"></div>
+          <div className="wrapper pb-2 text-center">
+            <div className="head-pic mx-auto bg-gradient-to-r from-0% from-[#4bb6c2] to-[#1e5178] w-16 h-16 rounded-full overflow-hidden flex items-end justify-center">
+              <Head />
+            </div>
+            <h3 className="mt-6 font-medium text-lg text-[#202A36]">
+              Example@gmail.com
+            </h3>
+            <button className="mt-5 h-[43px] w-full rounded-[5px] bg-[#F8F9FB] text-base flex items-center justify-center gap-2">
+              <LogoutIcon /> Log Out
+            </button>
           </div>
         </div>
       </div>
