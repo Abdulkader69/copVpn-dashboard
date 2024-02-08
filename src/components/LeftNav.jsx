@@ -38,7 +38,7 @@ const LeftNav = () => {
             <NavLink to="/">
               <img
                 className="w-full max-w-40"
-                src="../../public/logo.png"
+                src="https://copvpn.com/wp-content/uploads/2023/10/logo.svg"
                 alt="logo"
               />
             </NavLink>
