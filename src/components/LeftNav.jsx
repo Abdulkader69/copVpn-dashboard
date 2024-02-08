@@ -9,7 +9,7 @@ import LogoutIcon from '../assets/Icons/LogoutIcon';
 const menus = [
   {
     title: 'My Account',
-    slug: '/',
+    slug: '/account',
     icon: <ProfileIcon />,
   },
   {
@@ -35,11 +35,13 @@ const LeftNav = () => {
       <div className="left fixed left-0 top-0 min-h-screen border-r-2 border-solid border-[#202a360d] w-72">
         <div className="top">
           <div className="logo p-8">
-            <img
-              className="w-full max-w-40"
-              src="https://copvpn.com/wp-content/uploads/2023/10/logo.svg"
-              alt="logo"
-            />
+            <NavLink to="/">
+              <img
+                className="w-full max-w-40"
+                src="../../public/logo.png"
+                alt="logo"
+              />
+            </NavLink>
           </div>
           <div className="menu-wrapper">
             <div className="menu-items px-1">

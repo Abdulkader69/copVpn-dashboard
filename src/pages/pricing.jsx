@@ -95,9 +95,9 @@ export const Pricing = () => {
                       ''
                     )}
                     <button
-                      className={`mt-5 h-[43px] w-full bg-[#F8F9FB] group-hover:text-white rounded-lg group-hover:shadow-lg group-hover:bg-gradient-to-r group-hover:from-10% group-hover:from-[#4bb6c2] group-hover:to-[#1e5178] text-base font-semibold ${
+                      className={`mt-5 h-[43px] w-full bg-[#F8F9FB] group-hover:text-white rounded-lg group-hover:shadow-lg group-hover:bg-gradient-to-l group-hover:from-10% group-hover:from-[#4bb6c2] group-hover:to-[#1e5178] text-base font-semibold ${
                         item.selected
-                          ? 'shadow-lg bg-gradient-to-r from-10% from-[#4bb6c2] to-[#1e5178] text-white'
+                          ? 'shadow-lg bg-gradient-to-l from-10% from-[#4bb6c2] to-[#1e5178] text-white'
                           : ''
                       }`}
                     >

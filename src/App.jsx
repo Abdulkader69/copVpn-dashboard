@@ -6,6 +6,7 @@ import { Billing } from './pages/billing';
 import { ConnectedDevicesPage } from './pages/connected-devices';
 import { Pricing } from './pages/pricing';
 import { Route, Routes } from 'react-router-dom';
+import LoginPage from './pages/login';
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
         <LeftNav />
         <div className="right min-h-screen flex-1 pl-72">
           <Routes>
-            <Route exact path="/" element={<Account />} />
+            <Route exact path="/" element={<LoginPage />} />
+            <Route exact path="/account" element={<Account />} />
             <Route
               exact
               path="/connected-devices"
