@@ -47,7 +47,9 @@ const LoginPage = () => {
                 <Tab.Panel>
                   <LoginForm />
                 </Tab.Panel>
-                <Tab.Panel>{/* <SignUpForm /> */} Sign up Form</Tab.Panel>
+                <Tab.Panel>
+                  <SignUpForm />
+                </Tab.Panel>
               </Tab.Panels>
             </Tab.Group>
           </div>

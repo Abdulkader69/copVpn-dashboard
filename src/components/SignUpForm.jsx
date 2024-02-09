@@ -1,14 +1,12 @@
-import React from 'react';
-
 const SignUpForm = () => {
   return (
     <>
-      <div className="pt-4 bg-white">
+      <div className="signup-form-wrap">
         <div></div>
         <form className="mt-4 login_area">
           <div className="">
             <div>
-              <label className="text-[13px] w-full text-navy-700 dark:text-white ml-1.5 font-medium">
+              <label className="text-lg w-full text-[#202A36] ml-1.5 font-medium">
                 Email
               </label>
               <input
@@ -17,14 +15,13 @@ const SignUpForm = () => {
                 id="email"
                 placeholder="Enter Your Email"
                 required=""
-                className="mt-2 flex h-12 w-full items-center justify-center rounded-xl border bg-white/0 p-3 text-sm outline-none mb-4"
-                value="mdmarufhossen0591@gmail.com"
+                className="mt-2 flex h-16 w-full items-center placeholder:text-lg placeholder:font-normal justify-center rounded-sm border bg-white/0 border-[#f0efef] pt-[28px] pb-[28px] pl-[17px] text-sm outline-none mb-4"
               />
             </div>
           </div>
           <div className="">
             <div>
-              <label className="text-[13px] w-full text-[13px] dark:text-white ml-1.5 font-medium">
+              <label className="text-lg w-full text-[#202A36] ml-1.5 font-medium">
                 Password
               </label>
               <input
@@ -33,14 +30,13 @@ const SignUpForm = () => {
                 id="password"
                 placeholder="Enter your password"
                 required=""
-                className="mt-2  flex h-12 w-full items-center justify-center rounded-xl border bg-white/0 p-3 text-sm outline-none mb-4"
-                value="41101234"
+                className="mt-2 flex h-16 w-full items-center placeholder:text-lg placeholder:font-normal justify-center rounded-sm border bg-white/0 border-[#f0efef] pt-[28px] pb-[28px] pl-[17px] text-sm outline-none mb-4"
               />
             </div>
           </div>
           <div className="">
             <div>
-              <label className="text-[13px] w-full text-[13px] dark:text-white ml-1.5 font-medium">
+              <label className="text-lg w-full text-[#202A36] ml-1.5 font-medium">
                 Confirm Password
               </label>
               <input
@@ -49,7 +45,7 @@ const SignUpForm = () => {
                 id="confirmPassword"
                 placeholder="Confirm Password"
                 required=""
-                className="mt-2  flex h-12 w-full items-center justify-center rounded-xl border bg-white/0 p-3 text-sm outline-none mb-4"
+                className="mt-2 flex h-16 w-full items-center placeholder:text-lg placeholder:font-normal justify-center rounded-sm border bg-white/0 border-[#f0efef] pt-[28px] pb-[28px] pl-[17px] text-sm outline-none mb-4"
                 value=""
               />
             </div>
@@ -61,11 +57,11 @@ const SignUpForm = () => {
                 type="checkbox"
                 name="agreement"
                 required=""
-                className="defaultCheckbox relative flex h-[20px] min-h-[20px] w-[20px] min-w-[20px]  appearance-none items-center justify-center rounded-md border border-gray-300 text-white/0 outline-none transition duration-[0.2s] checked:border-none checked:text-white hover:cursor-pointer dark:border-white/10 checked:bg-brand-500 dark:checked:bg-brand-400"
+                className="relative flex h-[20px] min-h-[20px] w-[20px] min-w-[20px]  appearance-none items-center justify-center rounded-md border border-[#1D5379] text-white/0 outline-none transition duration-[0.2s] checked:border-none checked:text-white hover:cursor-pointer checked:bg-[#1D5379]"
               />
               <label
                 htmlFor="agreement"
-                className="ml-2 text-[13px] font-medium text-[#202A36] dark:text-gray-300"
+                className="ml-2 -mt-0.5 text-sm text-[#202A36]"
               >
                 I have read and agree to End User agreement, Privacy Policy,
                 Data Usage Regulations.
@@ -79,11 +75,11 @@ const SignUpForm = () => {
                 type="checkbox"
                 name="policyCheckbox"
                 required=""
-                className="defaultCheckbox relative flex h-[20px] min-h-[20px] w-[20px] min-w-[20px]  appearance-none items-center justify-center rounded-md border border-gray-300 text-white/0 outline-none transition duration-[0.2s] checked:border-none checked:text-white hover:cursor-pointer dark:border-white/10 checked:bg-brand-500 dark:checked:bg-brand-400"
+                className="relative flex h-[20px] min-h-[20px] w-[20px] min-w-[20px]  appearance-none items-center justify-center rounded-md border border-[#1D5379] text-white/0 outline-none transition duration-[0.2s] checked:border-none checked:text-white hover:cursor-pointer checked:bg-[#1D5379]"
               />
               <label
                 htmlFor="policyCheckbox"
-                className="ml-2 text-[13px] font-medium text-[#202A36] dark:text-gray-300"
+                className="ml-2 text-sm text-[#202A36]"
               >
                 I agree to receive marketing emails.
               </label>
@@ -94,7 +90,7 @@ const SignUpForm = () => {
           </button>
           <div className="mb-6 flex items-center  gap-3 mt-5">
             <div className="h-px w-full bg-gray-200 dark:bg-navy-700"></div>
-            <p className="text-base text-gray-600 dark:text-white"> or </p>
+            <p className="text-base text-[#858b91] text-[18px]"> or </p>
             <div className="h-px w-full bg-gray-200 dark:bg-navy-700"></div>
           </div>
           <div className="flex  lg:flex-row md:flex-row sm:flex-row flex-row">
@@ -137,7 +133,7 @@ const SignUpForm = () => {
                     ></path>
                   </svg>
                 </div>
-                <h5 className="text-sm text-[18px] font-medium text-[#202A36] dark:text-white">
+                <h5 className="text-sm text-[18px] font-medium text-[#202A36]">
                   Google
                 </h5>
               </div>
@@ -158,7 +154,7 @@ const SignUpForm = () => {
                     <path d="M23.023 17.093c-0.033-3.259 2.657-4.822 2.777-4.901-1.512-2.211-3.867-2.514-4.705-2.548-2.002-0.204-3.91 1.18-4.926 1.18-1.014 0-2.583-1.15-4.244-1.121-2.185 0.033-4.199 1.271-5.323 3.227-2.269 3.936-0.58 9.769 1.631 12.963 1.081 1.561 2.37 3.318 4.061 3.254 1.63-0.064 2.245-1.055 4.215-1.055s2.524 1.055 4.248 1.021c1.753-0.032 2.864-1.591 3.936-3.159 1.24-1.814 1.751-3.57 1.782-3.659-0.038-0.017-3.416-1.312-3.451-5.202zM19.783 7.53c0.897-1.089 1.504-2.602 1.34-4.108-1.294 0.053-2.861 0.86-3.79 1.948-0.832 0.965-1.561 2.502-1.365 3.981 1.444 0.112 2.916-0.734 3.816-1.821z"></path>
                   </svg>
                 </div>
-                <h5 className="text-sm text-[18px] font-medium text-[#202A36]  dark:text-white">
+                <h5 className="text-sm text-[18px] font-medium text-[#202A36]">
                   Apple
                 </h5>
               </div>
